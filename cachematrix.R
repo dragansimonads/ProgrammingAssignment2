@@ -70,7 +70,7 @@ if (!is.null(b)) a %*% b else message("Inversed matrix could not be calculated")
 a <- matrix(c(1,2,3,4,5,6),3,2)
 mm <- makeCacheMatrix(a)
 b<-cacheSolve(mm)
-if (!is.null(b)) a %*% b else message("Inversed matrix could not be calculated")
+if (!is.null(b)) a %*% b else message("Inverse matrix could not be calculated")
 
 
 
