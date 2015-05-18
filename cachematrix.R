@@ -34,13 +34,13 @@ makeCacheMatrix <- function(x = matrix()) {
 ## If the inverse has already been calculated (and the matrix has not changed), then the cachesolve 
 ## should retrieve the inverse from the cache.
 
-## The function also calculated the determinat to check if the matrix has an invese matrix
+## The function also calculates the determinat to check if the matrix has an invese 
 
 cacheSolve <- function(x, ...) {
  
   inverse <- x$getsolve()
   if(!is.null(inverse)) {
-    message("getting matrix inverted from cached data")
+    message("getting inverse from cached data")
     return(inverse)
   }
   
@@ -52,7 +52,7 @@ cacheSolve <- function(x, ...) {
   #verify if determinant is !=0 so the matrix can be inverted
   d<-determinant(data)
   if(d$modulus[1]==0)
-   return (NULL) ## matrix cannot be inverted
+   return (NULL) ## matrix cannot be inversed
   
   inverse <- solve(data, ...)
   x$setsolve(inverse)
