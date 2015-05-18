@@ -1,5 +1,5 @@
 ## The functions below are calculating the inverse of a matrix using 
-## cache to store already calcuated inversed matric for subsequent use 
+## cache to store already calcuated inverse matrix for subsequent use 
 ## on the same matrix.
 
 
